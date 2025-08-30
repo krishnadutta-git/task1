@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epic Slice - Pizza Delivery</title>
+  <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🍕 Epic Slice</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Cart 🛒 <span id="cart-count">0</span></a>
+      <a href="https://en.wikipedia.org/wiki/History_of_pizza" target="_blank" class="history-btn">Pizza History</a>
+    </nav>
+  </header>
+
+  <!-- Pizza Menu Section -->
+  <section class="menu">
+    <h2>Our Pizzas</h2>
+    <div class="pizza-list">
+
+      <!-- Pizza Items -->
+      <div class="pizza-card">
+        <img src="c.jpg" alt="Classic Pizza">
+        <h3>Classic</h3>
+        <p>Herbs & mozzarella cheese in a clean base.</p>
+        <p class="price">₹199</p>
+        <button onclick="addToCart('Classic',199)">Add to Cart</button>
+      </div>
+      
+      <div class="pizza-card">
+        <img src="p.webp" alt="Pepper Barbecue Chicken">
+        <h3>Pepper Barbecue Chicken</h3>
+        <p>Loaded with juicy chicken toppings.</p>
+        <p class="price">₹299</p>
+        <button onclick="addToCart('Pepper Barbecue Chicken',299)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="cl.jpg" alt="Cheese Volcano Peppy Paneer">
+        <h3>Cheese Volcano Peppy Paneer</h3>
+        <p>Paneer with lots of cheese in a clean base.</p>
+        <p class="price">₹259</p>
+        <button onclick="addToCart('Cheese Volcano Peppy Paneer',259)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="c.webp" alt="Golden Corn Pizza">
+        <h3>Golden Corn</h3>
+        <p>Corn with molten cheese.</p>
+        <p class="price">₹229</p>
+        <button onclick="addToCart('Golden Corn',229)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="cd.jpg" alt="Cheezy Delight Pizza">
+        <h3>Cheezy Delight</h3>
+        <p>Double the cheese, double the fun.</p>
+        <p class="price">₹249</p>
+        <button onclick="addToCart('Cheezy Delight',249)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="ps.avif" alt="Pepperoni Strom Pizza">
+        <h3>Pepperoni Strom</h3>
+        <p>Classic pepperoni with extra spice.</p>
+        <p class="price">₹329</p>
+        <button onclick="addToCart('Pepperoni Strom',329)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="gg.webp" alt="Golden Crust Pizza">
+        <h3>Golden Crust</h3>
+        <p>Crispy crust with buttery flavor.</p>
+        <p class="price">₹279</p>
+        <button onclick="addToCart('Golden Crust',279)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="vg.jpg" alt="Veg Loaded Pizza">
+        <h3>Veg Loaded</h3>
+        <p>Grilled mushrooms and fresh veggies in a base.</p>
+        <p class="price">₹239</p>
+        <button onclick="addToCart('Veg Loaded',239)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="bbq.jpg" alt="Pepper BBQ Chicken">
+        <h3>Pepper BBQ Chicken</h3>
+        <p>Barbecue chicken with extra cheese.</p>
+        <p class="price">₹299</p>
+        <button onclick="addToCart('Pepper BBQ Chicken',299)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card">
+        <img src="vc.jpg" alt="Cheese Volcano Chicken Delight">
+        <h3>Cheese Volcano Chicken Delight</h3>
+        <p>Overflowing cheese with golden corn and pepper BBQ chicken.</p>
+        <p class="price">₹349</p>
+        <button onclick="addToCart('Cheese Volcano Chicken Delight',349)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="cart-total">0</span></h3>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>🍕 Epic Slice - Serving Happiness One Pizza at a Time</p>
+      <p>
+        Learn more about <a href="https://en.wikipedia.org/wiki/History_of_pizza" target="_blank">Pizza History</a> |
+        <a href="#">Contact Us</a> |
+        <a href="#">Privacy Policy</a>
+      </p>
+      <p>&copy; 2025 Epic Slice. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="task1.js"></script>
+</body>
+</html>

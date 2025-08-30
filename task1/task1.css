@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff8f0;
+  color: #333;
+}
+
+header {
+  background: #e63946;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Highlighted Pizza History button */
+.history-btn {
+  background: #ffd166;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.history-btn:hover {
+  background: #ffb703;
+  color: white;
+}
+
+.menu {
+  padding: 2rem;
+  text-align: center;
+}
+
+.pizza-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.pizza-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pizza-card h3 {
+  margin: 0.5rem 0;
+}
+
+button {
+  background: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff6f61;
+}
+
+.cart {
+  background: #f8f8f8;
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  background: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.pizza-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: #e63946;
+  margin: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+  background: #e63946;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ffd166;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffb703;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+}
